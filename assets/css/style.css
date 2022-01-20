@@ -1,0 +1,165 @@
+:root{
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+}
+*{
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+body{
+    background-image: url(../img/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-color: var(--violet);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: white;
+}
+header{
+    padding-top: 38px;
+    padding-left: 40px;
+}
+.logo{
+    cursor: pointer;
+}
+.hero{
+    padding-left: 36px;
+    padding-right: 36px;
+
+}
+.container{
+    padding-top: 60px;
+}
+.banner{
+    margin-top: 69px;
+    padding-right: 4px;
+    padding-left: 4px;
+}
+h1{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    padding-bottom: 16px;
+}
+.description{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+}
+.register-button{
+    font-size: 12px;
+    color: var(--violet);
+    line-height: 18px;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    background-color: white;
+    padding: 1em 1.5em;
+    border-radius: 20px;
+    width: 200px;
+    margin-top: 24px;
+    margin-bottom: 64px;
+}
+.register-button:hover{
+    color: white;
+    background-color: var(--soft-magenta);
+    box-shadow: 2px 4px 9px 3px rgba(0, 0, 0, 0.258633);
+}
+footer{
+    padding-bottom: 40px;
+}
+.fb-icon, .tt-icon, .insta-icon{
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+.fb-icon{
+    background-image: url(../img/icon-facebook.svg);
+}
+.tt-icon{
+    background-image: url(../img/icon-twitter.svg);
+}
+.insta-icon{
+    background-image: url(../img/icon-instagram.svg);
+}
+.fb-icon:hover{
+    background-image: url(../img/hover-icon-fb.svg);
+}
+.tt-icon:hover{
+    background-image: url(../img/hover-icon-tt.svg);
+}
+.insta-icon:hover{
+    background-image: url(../img/hover-icon-insta.svg);
+}
+
+
+@media (min-width:1440px){
+    body{
+        background-image: url(../img/bg-desktop.svg);
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    header{
+        padding-left: 0px;
+        width: 1275px;
+    }
+    .logo{
+        width: 200px;
+    }
+    main{
+        display: flex;
+        justify-content: center;
+    }
+    .hero{
+        width: 1275px;
+        padding-left: 0px;
+        padding-right: 0px;
+        display: flex;
+    
+    }
+    .banner{
+        width: 696px;
+        padding-right: 0px;
+        padding-left: 0px;
+        flex-basis: 54.58%;
+    }
+    .container{
+        flex-basis: 45.42%;
+        padding-left: 59px;
+        padding-top: 92px;
+    }
+    h1{
+
+        font-size: 40px;
+        text-align: left;
+        line-height: 60px;
+    }
+    .description{
+        font-size: 18px;
+        text-align: left;
+        line-height: 27px;
+    }
+    .button-container{
+        text-align: left;
+    }
+    .register-button{
+        font-size: 18px;
+        line-height: 27px;
+        border-radius: 28px;
+        margin-top: 24px;
+        text-align: center;
+    }
+    footer{
+        text-align: right;
+        width: 1275px;
+    }
+    
+}
+
